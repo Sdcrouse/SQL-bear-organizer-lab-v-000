@@ -21,6 +21,7 @@ end
 
 def selects_most_prominent_color_and_returns_with_count
   "SELECT color, COUNT(*) FROM bears WHERE color = (SELECT MAX(color) FROM bears);"
+  # Note: "SELECT MAX(color) FROM bears" returns the most prominent bear color.
   
   # Other, more complicated solutions:
   # "SELECT color, COUNT(*) AS count_color FROM bears GROUP BY color ORDER BY count_color DESC LIMIT 1;"
