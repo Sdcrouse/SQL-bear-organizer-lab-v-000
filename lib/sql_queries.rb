@@ -34,5 +34,6 @@ def counts_number_of_bears_with_goofy_temperaments
 end
 
 def selects_bear_that_killed_Tim
+  # The bear that killed Tim had no name, so this should work, in this case:
   ""
 end
