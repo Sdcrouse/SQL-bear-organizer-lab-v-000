@@ -35,5 +35,5 @@ end
 
 def selects_bear_that_killed_Tim
   # The bear that killed Tim had no name, but to make sure I only get ONE bear, do this:
-  ""
+  "SELECT * FROM bears WHERE name IS NULL;"
 end
