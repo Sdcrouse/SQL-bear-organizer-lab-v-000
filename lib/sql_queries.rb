@@ -34,6 +34,6 @@ def counts_number_of_bears_with_goofy_temperaments
 end
 
 def selects_bear_that_killed_Tim
-  # The bear that killed Tim had no name, but to make sure I only get ONE bear, do this:
+  # The bear that killed Tim is the only one without a name, so this will work:
   "SELECT * FROM bears WHERE name IS NULL;"
 end
